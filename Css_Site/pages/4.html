@@ -1,0 +1,161 @@
+<html>
+<head>
+<link  rel="stylesheet" href="../css/style.css">
+<title>
+CSS ARKA PLANLAR
+</title>
+</head>
+<body>
+<div class="genel">
+	<div class="header">
+		<div class="logo">
+		<img src="../assets/logo1.png"></img></div>
+		<div class="menu">
+		<ul>
+			<li><a href="../index.html">Anasayfa</a></li>
+			<li><a href="">İletişim</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content"> 
+		<div class="sidebar">
+			<h2> Temel Bilgiler </h2>
+			<ul>
+			<li><a href="../index.html">CSS NEDİR?</a></li>
+			<li><a href="../pages/1.html">CSS KOD YAPISI</a></li>
+			<li><a href="../pages/2.html">CSS ID ve Class Seçimi</a></li>
+			<li><a href="../pages/3.html">CSS Nasıl Eklenir?</a></li>
+			</ul>
+			<br><br>
+			<h2> CSS Stilleri </h2>
+			<ul>
+			<li><a href="../pages/4.html">CSS Arkaplanlar</a></li>
+			<li><a href="../pages/5.html">CSS Yazılar</a></li>
+			<li><a href="../pages/7.html">CSS Bağlantılar</a></li>
+			</ul>
+			<br><br>
+			<h2> JavaScript </h2>
+			<ul>
+			<li><a href="../pages/9.html">Js'e Giriş & Syntax</a></li>
+			<li><a href="../pages/10.html">Js Değişkenler & veri tipleri</a></li>
+			<li><a href="../pages/11.html">Js Event(olay)</a></li>
+			<li><a href="../pages/12.html">Js Fonksiyon yapısı</a></li>
+			<li><a href="../pages/13.html">Js Tip Dönüşümleri</a></li>
+			</ul>
+			</div>
+		<div class="icerik">
+			<div class="icerik-kutu1">
+			<div class="icerik-detay1">
+			<h2>CSS Arkaplanlar</h2>
+			<p>Bu sayfada HTML sayfanızın ya da sayfanızda bir bölümün arkaplan rengini, resmini ve özelliklerini nasıl belirleyeceğiniz ile ilgili bilgiler bulunmaktadır.<br><br>CSS arkaplan özellikleri bir HTML nesnesine arkaplan eklemenizde yardımcı olur. Bununla ilgili olarak tanıyacağımız CSS kodları:</p>
+		<ul>
+
+			<li><a href="#arkaplanrengi" class="sayfaicilink">background-color</a></li>
+			<li><a href="#arkaplanresmi" class="sayfaicilink">background-image</a></li>
+			<li><a href="#arkaplantekrari" class="sayfaicilink">background-repeat</a></li>
+			<li><a href="#arkaplansabitligi" class="sayfaicilink">background-attachment</a></li>
+			<li><a href="#arkaplankonum" class="sayfaicilink">background-position</a></li>
+			<li><a href="#arkaplankisa" class="sayfaicilink">background</a></li>
+		</ul>
+			</div>
+				</div>
+				
+				<div class="icerik-kutu1">
+			<div class="icerik-detay1">
+			<h2>CSS'de Renk İfadeleri</h2>
+			<p>CSS dosyamızda yer yer renkleri belirtmemiz gerekebilir. Bunun için çeşitli yollar var. Bunlardan en çok kullanılan üç tanesi:</p>
+			<ul type ="square">
+				<li> Onaltılık (Hex) Renkler</li>
+				<li> RGB (Kırmızı, Yeşil, Mavi) Renkler</li>
+				<li> Tarayıcı Renk İsimleri</li>
+			</ul>
+				<p><b>Onaltılık (Hex) Renkler: </b> #000000 şeklinde önce diyez sonra 6 adet 0-9 ve A-F değerleri alabilen sembollerden oluşur. Örneğin #404040 bir rengi ifade etmektedir.<br>
+Bu renk kodlarına resim işlem programlarınız yardımıyla (photoshop, paint shop pro gibi) ulaşabilirsiniz.<br><br>
+<b>RGB (Kırmızı, Yeşil, Mavi) Renkler:</b> Bir renk oluştururken kırmızı, yeşil ve mavinin tonlarını belirterek renk oluşturmamızı sağlar. Örneğin rgb( 0, 0, 0 ) siyah rengi belirtir. Mavi bir renk elde etmek istediğimizde Red - Green - Blue üçlemesinde en sonda yer alan mavinin değerini arttırmamız yeterli olur. Yani rgb( 0, 0, 255 ) mavi rengi verir. Windows'daki Paint Brush (MS Paint) programı ve diğer resim editörleri yardımıyla RGB değerlerini alarak renk oluşturabilirsiniz.<br><br>
+
+<b>Tarayıcı Renk İsimleri: </b>İngilizce olarak belirlenmiş bazı renk adlarını yazarak renk elde edebilirsiniz. Örneğin white beyaz, black siyah, blue mavi rengini verecektir.
+
+Aşağıda renklerle ilgili örnek bir kullanım var:</p><br>
+<img src="../assets/backround-icerik.png"></img><br><br><br>
+			</div>
+				</div>
+				<div class="icerik-kutu1">
+					<div class="icerik-detay1">
+				<a name="arkaplanrengi"><h2>background-color: Arkaplan Rengi:</h2></a>
+				Bir elementin arkaplan rengini belirlememizi sağlar.<br>
+				<img src="../assets/backround-icerik2.png"></img><br>
+			
+					</div>
+				</div>
+				<br><br>
+				<div class="icerik-kutu1">
+					<div class="icerik-detay1">
+				<a name="arkaplanresmi"><h2>background-image: Arkaplan Resmi</h2></a>
+				Bir element içinde arkaplan resmi kullanmamızı sağlar.<br><br>
+				<img src="../assets/backround-icerik3.png"></img><br>
+				<br>Yukarıdaki gibi url('') yazılarak arasında resmin adı veya yolu yazılır. Örnekte resmin adı resim.jpg olarak gösterilmiştir.
+			
+					</div>
+				</div>
+				<div class="icerik-kutu1">
+					<div class="icerik-detay1">
+				<a name="arkaplantekrari"><h2>background-repeat: Arkaplan Tekrarı / Döşeli</h2></a>
+				Kullandığımız arkaplan resminin tekrar edip etmeyeceğini belirtmemizi sağlar. Dört kullanımı vardır:<br><br>
+				<ul>
+					<li>no-repeat : Tekrar edilmeyecektir</li>
+					<li>repeat : Tekrarlanacaktır / döşenecektir</li>
+					<li>repeat-x : Sadece sağa doğru tekrar edecektir</li>
+					<li>repeat-y : Sadece aşağı doğru tekrar edecektir</li>
+				</ul>
+				
+				Aşağıdaki kullanım örneğini inceleyelim:<br>
+				<img src="../assets/backround-icerik4.png"></img><br>
+				<br>Aşağıdaki kullanım örneğini inceleyelim:
+			
+					</div>
+				</div>
+					<div class="icerik-kutu1">
+					<div class="icerik-detay1">
+				<a name="arkaplansabitligi"><h2>background-attachment: Arkaplan Sabitliği</h2></a>
+				Bu kod kullandığımız arkaplanın sabit kalıp kalmayacağı hakkında ayar yapmamızı sağlar. Eğer özellik değerinin sabit kalmasını (yani sayfanın yerine göre değişmemesini) istiyorsak fixed özelliği kullanırız.<br><br>
+		
+				
+				Aşağıdaki kullanım örneğini inceleyelim:<br>
+				<img src="../assets/backround-icerik5.png"></img><br>
+				<br>
+			
+					</div>
+				</div>
+					<div class="icerik-kutu1">
+					<div class="icerik-detay1">
+				<a name="arkaplanhiza"><h2>background-position: Resmin Nereye Hizalanacağı</h2></a>
+				Eğer background-repeat özelliğini no-repeat olarak belirlediysek bu kod yardımıyla onun hizalanma şeklini belirleme şansına sahip oluruz.<br><br>
+		
+				
+				<img src="../assets/backround-icerik6.png"></img><br>
+				<br>
+				Yukarıda yer alan kod arkaplan resminin right (sağ) ve top (üst) tarafa doğru hizalanacağını bildirir.
+			
+					</div>
+				</div>
+					<div class="icerik-kutu1">
+					<div class="icerik-detay1">
+				<a name="arkaplankisa"><h2>background: Arkaplan Belirlemenin Kısa Yolu</h2></a>
+				Yukarıdaki tüm özellikleri tek bir kodda kullanmanız mümkün. Bunun için kullanacağımız kod: background.<br><br>
+		
+				<img src="../assets/backround-icerik7.png"></img><br>
+				<br>
+				Yukarıdaki kodda belirtilenler sırasıyla: background-color, background-image, background-repeat ve background-position.
+			<br><br><br><br><br>
+					</div>
+				</div>
+			
+				
+		</div>
+	</div>
+	
+	
+	
+</div>
+</body>
+</html>

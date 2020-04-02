@@ -1,0 +1,95 @@
+<html>
+<head>
+<link  rel="stylesheet" href="../css/style.css">
+<title>
+JavaScript Fonksiyon Kullanımı
+</title>
+</head>
+<body>
+<div class="genel">
+	<div class="header">
+		<div class="logo">
+		<img src="../assets/logo1.png"></img></div>
+		<div class="menu">
+		<ul>
+			<li><a href="../index.html">Anasayfa</a></li>
+			<li><a href="">İletişim</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content"> 
+		<div class="sidebar">
+			<h2> Temel Bilgiler </h2>
+			<ul>
+			<li><a href="../index.html">CSS NEDİR?</a></li>
+			<li><a href="../pages/1.html">CSS KOD YAPISI</a></li>
+			<li><a href="../pages/2.html">CSS ID ve Class Seçimi</a></li>
+			<li><a href="../pages/3.html">CSS Nasıl Eklenir?</a></li>
+			</ul>
+			<br><br>
+			<h2> CSS Stilleri </h2>
+			<ul>
+			<li><a href="../pages/4.html">CSS Arkaplanlar</a></li>
+			<li><a href="../pages/5.html">CSS Yazılar</a></li>
+			<li><a href="../pages/7.html">CSS Bağlantılar</a></li>
+			</ul>
+			<br><br>
+			<h2> JavaScript </h2>
+			<ul>
+			<li><a href="../pages/9.html">Js'e Giriş & Syntax</a></li>
+			<li><a href="../pages/10.html">Js Değişkenler & veri tipleri</a></li>
+			<li><a href="../pages/11.html">Js Event(olay)</a></li>
+			<li><a href="../pages/12.html">Js Fonksiyon yapısı</a></li>
+			<li><a href="../pages/13.html">Js Tip Dönüşümleri</a></li>
+			</ul>
+			</div>
+		<div class="icerik">
+			<div class="icerik-kutu1">
+			<div class="icerik-detay1">
+			<h2>JavaScript Fonksiyon Kullanımı</h2>
+			<p>Fonksiyonlar belirli bir görevi yerine getirmek için tasarlanmış kod bloklarıdır. Hazırlanan fonksiyonlar çağrıldığında yürütülerek istenen görev gerçekleştirilir.</p>
+			<pre>
+	function fonk1(s1, s2){
+   	return s1 * s2;
+	}
+			</pre>
+<p>Fonksiyoların temel yapısı yukarıdaki gibidir. “function” anahtar kelimesi ile başlar. Daha sonra fonksiyona bir isim verilir. Yukarıdaki fonksiyonda fonk1 ismi verilmiştir.</p>
+<p>Fonksiyonları yapacağı işe göre isimlendirmek kolaylık sağlayacaktır. Fonksiyon ismi verildikten sonra “( )” parantez açılır.</p>
+<p>Parantezler virgüllerle ayrılmış parametre adlarını içerebilir: (parametre1, parametre2, …)</p>
+<p>Parametreler fonksiyon çağrıldığında fonksiyon tarafından alınan değerlerdir. Alınan bu değerler değişkenler gibi davranır ve fonksiyon içerisinde bu şekilde davranır.</p>
+<p>{ } süslü parantezler içindeki kısım fonksiyonun çalıştıracağı kodlardır. Bu kodlar fonksiyon çağrıldığında çalışacaktır. Fonksiyonun çağrılması;</p>
+<p>Bir olay meydana geldiğinde (kullanıcı bir düğmeyi tıklattığında), JavaScript kodundan çağrıldığında, Otomatik olarak (kendiliğinden) olabilmektedir.</p>	
+<p>Fonksiyonda kullanılan return ifadesi fonksiyonun geri döndüreceği değer için kullanılır. return ifadesine ulaşıldığında fonksiyon duracaktır.</p>
+<p>Yukarıda fonk1 ismiyle oluşturduğumuz fonksiyonu incelediğimizde dışarıdan 2 adet parametre aldığını görmekteyiz (s1,s2).</p>
+<p>ve alınan bu iki değerinin çarpımının geriye döndürüldüğünü görüyoruz.</p>
+<p>Şimdide oluşturduğumuz bu fonksiyonu nasıl çağırabileceğimize bakalım.</p>
+<pre>
+	!DOCTYPE html>
+html>
+head>
+meta charset="utf-8">
+title>www.yazilimkodlama.com/title>
+/head>
+body>
+h2>JavaScript Fonksiyon Kullanımı/h2>
+p>Bu örnek fonksiyon oluşturma ve fonksiyonun çağrılmasını göstermektedir./p>
+p id="kutu">/p>
+script>
+function fonk1(p1, p2) {
+    return p1 * p2;
+}
+document.getElementById("kutu").innerHTML = fonk1(6, 4);
+/script>
+/body>
+	/html>
+	<p>Yukarıdaki örnekte aldığı 2 parametreyi çarpıp sonucu <br>döndüren fonksiyonun oluşturulduğunu görüyoruz.</p>
+</pre>		
+			
+			</div>
+				</div>
+	
+	
+	
+</div>
+</body>
+</html>

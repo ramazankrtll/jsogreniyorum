@@ -1,0 +1,1 @@
+slidershow falan kullanıcaktım fakat sadece css ile istendıgı ıcın js kullanmadım site içerisinde
