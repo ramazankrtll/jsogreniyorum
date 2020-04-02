@@ -1,2 +1,1 @@
-# jsogreniyorum
- js-dersodevleri
+![jsogreniyorum - Gif ](outputs/screen.gif)
