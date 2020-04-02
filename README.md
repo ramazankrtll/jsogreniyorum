@@ -1,1 +1,1 @@
-![jsogreniyorum - Gif ](outputs/screen.gif)
+![jsogreniyorum - Gif ](Css_Site/outputs/screen.gif)
