@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BAKKAL POŞETİ</title>
+	<link rel="stylesheet" type="text/css" href="css/alisveris.css">
+	<script>
+	function sepeteEkle(){
+	var urun = document.getElementById("urunText").value;
+	var text = document.createTextNode(urun);
+	var p = document.createElement("p");
+	p.appendChild(text);
+	var btn = document.createElement("BUTTON"); 
+	btn.innerHTML = "X";        
+	var sepet = document.getElementById("sepet");
+	btn.style.marginLeft = "10px";
+	btn.id = "deletePrd";
+	btn.onclick = function(){sepettenSil(p)};
+	p.appendChild(btn);
+	sepet.appendChild(p);
+}
+function sepettenSil(p){
+	var sepet = document.getElementById("sepet");
+	sepet.removeChild(p);
+}
+	</script>
+</head>
+<body>
+	<script type="text/javascript" src="js/alisveris.js"></script>
+	<div id="header">
+		<div id="headerin">
+			BAKKALPOŞETİM.COM
+		</div>
+	</div>
+	<div id="content">
+		<div id="siparis" align="center">
+			<input id="urunText" type="text" name="ara" placeholder="Ürün Yazın"><input id="ekleButton" type="button" name="ekle" value="Ekle" onclick="sepeteEkle()">
+			<div id="sepet">
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

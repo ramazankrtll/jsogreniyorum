@@ -53,6 +53,60 @@ color:#ea6660
 	
 	
 }
+#resimhakkimda{
+	width:50px; height:50px; margin: 10px 20px 0 0; float:left;}
+#resimicerik{
+	width:440px; height:auto; float:left;}
+#soruekle{
+	font-size:14px;
+	text-align: left;
+	margin-top:-20px;
+	margin-bottom:10px;
+	width:510px;
+	float:left;
+	padding-left:20px;
+}
+#alan{
+	width:100px; height:50px; float:left; margin-top:10px;
+}
+#alan2{
+	width:auto; height:60px; float:left; margin-top:-6px;
+}
+
+#newElementZone{
+	width:auto; height:100px; 
+}
+#orta14{
+	width:760px; height:50px; 
+}
+#deneme{
+	width:161px; height:auto;
+	background-color:#ff25ff;
+	margin-top:40px;
+	
+}
+#textarea{
+	float:left;
+	margin-top:5px;
+	margin-right:10px;
+}
+
+#button{
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+	float:left;
+}
+#textForNewElement{
+	margin-right:20px;
+	margin-left:100px;
+	margin-top:20px;
+}
+
+
+
+
+
 .sidebar ul{
 	padding:0px;
 	margin:0px;
@@ -96,7 +150,6 @@ color:#ea6660
 	padding-left:20px;
 }
 .icerik-detay1{
-	margin-top:-20px;
 	width:510px;
 	float:left;
 	padding-left:92px;
@@ -105,12 +158,21 @@ color:#ea6660
 	padding-bottom:30px;
 }
 .icerik-kutu1{
-	margin-top:70px;
+	margin-top:60px;
 	margin-left:15px;
 	width:745px;
 	height:200px;
 	line-height:25px;
 	
+}
+#uyelik_formu{
+    padding: 10px;
+    width: 390px;
+    border: 1px solid black;
+}  
+label{          
+    float: left;
+    width: 150px;
 }
 a.sayfaicilink{
 	font-weight: bold;

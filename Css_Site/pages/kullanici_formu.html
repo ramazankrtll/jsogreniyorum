@@ -1,0 +1,178 @@
+<html>
+<head>
+<link  rel="stylesheet" href="../css/style.css">
+<title>
+Javascript Veri Tipleri Arası Geçiş
+</title>
+<script>
+function isValid(frm)
+{
+	var tc_no = frm.tcNo.value;
+    var kadi = frm.kadi.value;
+    var sifre1 = frm.sifre1.value;
+    var sifre2 = frm.sifre2.value;
+    var email = frm.email.value;
+    var atpos=email.indexOf("@");
+    var dotpos=email.lastIndexOf(".");
+    if ( kadi==null || kadi=="" || kadi.length < 4 )
+    {
+        alert("Kullanıcı adı 4 karakterden az olamaz");
+        return false;
+    }
+    if ( sifre1 == null || sifre1 == "" || sifre2 == null || sifre2 == "")
+    {
+        alert("Şifreyi boş bırakmayın");
+        return false;
+    }
+    if ( !(sifre1 == sifre2) )
+    {
+        alert("Şifreler eşleşmiyor");
+        return false;
+    }
+    if ( atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length )
+    {
+        alert("Geçerli email adresi girin");
+        return false;
+	}
+	if (!(tc_no.length == 11)){
+		alert("tc no 11 hane değil");
+		return false;
+	}
+	alert("Form gönderim tamamlandı.");
+	return true;
+	
+	
+	
+}
+</script>
+
+
+
+
+
+</head>
+<body>
+<div class="genel">
+	<div class="header">
+		<div class="logo">
+		<img src="../assets/logo1.png"></img></div>
+		<div class="menu">
+		<ul>
+			<li><a href="../index.html">Anasayfa</a></li>
+			<li><a href="../pages/soru_sor.html">Soru Sor?</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content"> 
+		<div class="sidebar">
+			<h2> Temel Bilgiler </h2>
+			<ul>
+			<li><a href="../index.html">CSS NEDİR?</a></li>
+			<li><a href="../pages/1.html">CSS KOD YAPISI</a></li>
+			<li><a href="../pages/2.html">CSS ID ve Class Seçimi</a></li>
+			<li><a href="../pages/3.html">CSS Nasıl Eklenir?</a></li>
+			</ul>
+			<br><br>
+			<h2> CSS Stilleri </h2>
+			<ul>
+			<li><a href="../pages/4.html">CSS Arkaplanlar</a></li>
+			<li><a href="../pages/5.html">CSS Yazılar</a></li>
+			<li><a href="../pages/7.html">CSS Bağlantılar</a></li>
+			</ul>
+			<br><br>
+			<h2> JavaScript </h2>
+			<ul>
+			<li><a href="../pages/9.html">Js'e Giriş & Syntax</a></li>
+			<li><a href="../pages/10.html">Js Değişkenler & veri tipleri</a></li>
+			<li><a href="../pages/11.html">Js Event(olay)</a></li>
+			<li><a href="../pages/12.html">Js Fonksiyon yapısı</a></li>
+			<li><a href="../pages/13.html">Js Tip Dönüşümleri</a></li>
+			<li><a href="../pages/14.html">Js-DOM</a></li>
+			<li><a href="../pages/Adam_Asmaca.html">Js-Adam Asmaca</a></li>
+			<li><a href="../pages/kullanici_formu.html">Js-Kullanıcı Formu</a></li>
+			</ul>
+			</div>
+		<div class="icerik">
+			<div class="icerik-kutu1">
+			<div class="icerik-detay1">
+            <h2> KULLANICI FORMU  ÖRNEĞİ</h2>
+            	<div id="uyelik_formu">
+    <form name="uye_formu" action="../pages/kullanici_formu.html" onsubmit="return isValid(this)" method="post">
+        <label>Kullanıcı Adı:</label>
+        <input type="text" name="kadi">
+        <br>
+        <br>
+        <label>Şifre:</label>
+        <input type="password" name="sifre1">
+        <br>
+        <br>
+        <label>Şifre (Tekrar):</label>
+        <input type="password" name="sifre2">
+        <br>
+        <br>
+        <label>E-Mail:</label>
+        <input type="text" name="email">
+        <br>
+        <br>
+        <label>TC:</label>
+        <input type="text" name="tcNo">
+        <br>
+        <br>
+        <input type="submit" value="Kaydet!">
+    </form>
+</div>
+<br><br>
+<h2> Form nesnemizde girdileri kontrol ettigimiz şartlar </h2>
+<ul>
+<li>Kullanıcı adı boş olamaz, 4 karakterden az olamaz.</li>
+<li>Şifre boş olamaz.</li>
+<li>Şifre tekrarı boş olamaz.</li>
+<li>Şifre ve şifre tekrarı farklı olamaz.</li>
+<li>E-Mail boş olamaz, geçersiz e-mail olamaz.</li>
+<li>tc 11 rakamdan farklı olamaz</li>
+</ul><br>
+<h2> Javascript Kodu </h2>
+<pre>
+function isValid(frm)
+{
+    var kadi = frm.kadi.value;
+    var sifre1 = frm.sifre1.value;
+    var sifre2 = frm.sifre2.value;
+    var email = frm.email.value;
+    var atpos=email.indexOf("@");
+    var dotpos=email.lastIndexOf(".");
+    if ( kadi==null || kadi=="" || kadi.length < 4 )
+    {
+        alert("Kullanıcı adı 4 karakterden az olamaz");
+        return false;
+    }
+    if ( sifre1 == null || sifre1 == "" || sifre2 == null || sifre2 == "")
+    {
+        alert("Şifreyi boş bırakmayın");
+        return false;
+    }
+    if ( !(sifre1 == sifre2) )
+    {
+        alert("Şifreler eşleşmiyor");
+        return false;
+    }
+    if ( atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length )
+    {
+        alert("Geçerli email adresi girin");
+        return false;
+    }      
+    return true;
+}
+</pre><br>
+<br>
+<h2> HTML Kodu </h2>
+<img src="file:///C|/Users/KARTAL/Documents/Css_Site/assets/html_code_image.png" width="700"></img>
+<br><br><br><br><br>
+            </div>
+			</div>
+	
+	
+	
+</div>
+</body>
+</html>

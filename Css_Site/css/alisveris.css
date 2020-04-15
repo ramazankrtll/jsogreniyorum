@@ -1,0 +1,92 @@
+@font-face{
+	font-family: myFont;
+	src: url(../assets/font-family/Thasadith-Regular.ttf);
+}
+body{
+	margin: 0;
+}
+html,body {
+    height: 95%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F6f6f6; 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+#header{
+	width: 100%;
+	height: 50px;
+	background-color: #221195;
+}
+#headerin{
+	width: auto;
+	height: 50px;
+	font-family: myFont;
+	padding-top: 10px;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	font
+}
+#content{
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/market.jpg);
+	background-position: center;
+	margin: auto;
+	background-size: 100% 100%;
+	position: fixed;
+}
+#siparis{
+	width: 500px;
+	height: 250px;
+	margin: auto;
+	margin-top: 150px;
+	background-color: white;
+	border-radius: 15px;
+}
+#urunText{
+	height: 25px;
+	border-radius: 15px;
+}
+#ekleButton{
+	height: 25px;
+	border-style: solid;
+	border-radius: 15px;
+	background-color: orange;
+}
+#sepet{
+	width: 250px;
+	height: 200px;
+	margin-top: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 15px;
+	overflow: scroll;
+	background-color: #496595;
+	font-family: myFont;
+	color: white;
+}
+#deletePrd{
+	text-align: center;
+	background-color: orange;
+	border-style: none;
+	border-radius: 15px;
+
+}

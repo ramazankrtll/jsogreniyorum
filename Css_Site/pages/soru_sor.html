@@ -1,8 +1,28 @@
 <html>
 <head>
 <link  rel="stylesheet" href="../css/style.css">
+
+<script>
+function yenikısım(){
+	var metin=document.getElementById("textarea").value;
+	
+	var yenielement=document.createElement("p");
+	
+	var icerik=document.createTextNode(metin);
+	
+	yenielement.appendChild(icerik);
+	
+	var anakısım=document.getElementById("soruekle");
+	
+	anakısım.appendChild(yenielement);
+	document.getElementById("resim").innerHTML = "<img src='../assets/question.png'>"; 
+	
+	alert ("Mesajınız gönderildi.");
+}
+
+</script>
 <title>
-CSS
+soru sor?
 </title>
 </head>
 <body>
@@ -49,31 +69,27 @@ CSS
 		<div class="icerik">
 			<div class="icerik-kutu1">
 			<div class="icerik-detay1">
-			<h2>CSS Bağlantılar</h2>
-			<p>Sitenizdeki bağlantıları CSS kullanarak şekillendirmek için bazı özel eklerden faydalanılır.<br>Bir bağlantı dört farklı şekilde stillendirilebilir. Bunlar:</p>	
-			<ul>
-				<li>a:link - Normal link görünüşü</li>
-				<li>a:visited - Ziyaret edilmiş siteye giden link görünümü</li>
-				<li>a:hover - Fare ile üzerine gelindiğindeki görünüş</li>
-				<li>a:active - Tıklanılan andaki görüntüsü</li><br>
-			</ul>
-			Yukarıdaki tüm süreçler için biçimlendirme yapmamız mümkün:<br>
-			<img src="../assets/baglantilar.png"></img><br>
-			Yukarıdaki bağlantı biçimlerini sıralarken uymamız gereken bir sıra vardır. Bu sıraya uyulmazsa bağlantı görünümleri doğru çalışmayabilir.<br>
-			<ul>
-				<li>a:hover her zaman a:link ve a:visited den SONRA gelmeli.</li>
-				<li>a:active her zaman a:hover dan SONRA gelmeli.</li>
-
-			</ul>
-
+			<div id="soruekle">
+			 <h3> Mesajınızı Yazınız.. </h3>
+				<div id="resimhakkimda"><span id="resim"></span> </div>
+				<div id="resimicerik"><p></p></div>
+				<span id="resim"></span> 
 			</div>
 			
+			
+			<textarea id="textarea" rows="4" cols="63"></textarea>
+				<button onclick="yenikısım()">Gonder </button>
+				<img src="../assets/question.png"></img>	
 				
+				
+				
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 </body>
 </html>

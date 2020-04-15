@@ -1,0 +1,132 @@
+<html>
+<head>
+<link  rel="stylesheet" href="../css/style.css">
+<script>
+function textForNewElmnt(){
+	var metin = document.getElementById("textForNewElement").value;
+	var text = document.createTextNode(metin);
+	var newElement = document.createElement("P");
+	newElement.onclick = function(){deletePFromId(newElement)};
+	newElement.appendChild(text);
+	var contentOpt = document.getElementById("newElementZone");
+	contentOpt.appendChild(newElement);		
+}
+
+function deletePFromId(p){
+	var element = document.getElementById("newElementZone");
+	element.removeChild(p);
+}
+</script>
+<title>
+JS-DOM
+</title>
+</head>
+<body>
+<div class="genel">
+	<div class="header">
+		<div class="logo">
+		<img src="../assets/logo1.png"></img></div>
+		<div class="menu">
+		<ul>
+			<li><a href="../index.html">Anasayfa</a></li>
+			<li><a href="../pages/soru_sor.html">Soru Sor?</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content"> 
+		<div class="sidebar">
+			<h2> Temel Bilgiler </h2>
+			<ul>
+			<li><a href="../index.html">CSS NEDİR?</a></li>
+			<li><a href="../pages/1.html">CSS KOD YAPISI</a></li>
+			<li><a href="../pages/2.html">CSS ID ve Class Seçimi</a></li>
+			<li><a href="../pages/3.html">CSS Nasıl Eklenir?</a></li>
+			</ul>
+			<br><br>
+			<h2> CSS Stilleri </h2>
+			<ul>
+			<li><a href="../pages/4.html">CSS Arkaplanlar</a></li>
+			<li><a href="../pages/5.html">CSS Yazılar</a></li>
+			<li><a href="../pages/7.html">CSS Bağlantılar</a></li>
+			</ul>
+			<br><br>
+			<h2> JavaScript </h2>
+			<ul>
+			<li><a href="../pages/9.html">Js'e Giriş & Syntax</a></li>
+			<li><a href="../pages/10.html">Js Değişkenler & veri tipleri</a></li>
+			<li><a href="../pages/11.html">Js Event(olay)</a></li>
+			<li><a href="../pages/12.html">Js Fonksiyon yapısı</a></li>
+			<li><a href="../pages/13.html">Js Tip Dönüşümleri</a></li>
+			<li><a href="../pages/14.html">Js-DOM</a></li>
+			<li><a href="../pages/Adam_Asmaca.html">Js-Adam Asmaca</a></li>
+			<li><a href="../pages/kullanici_formu.html">Js-Kullanıcı Formu</a></li>
+			</ul>
+			</div>
+		<div class="icerik" >
+			<div id="orta14" align="center">
+
+            <div id ="alan" align="center"><textarea id="textForNewElement" placeholder="Metin giriniz"></textarea> </div>
+			<div id ="alan2" align="center"><input  type="button" name="yeniElement" value="Yeni Elment Oluştur" onClick="textForNewElmnt()"></div>
+			
+			<div id="newElementZone" align="center">
+				<h2>Div Alanı</h2>
+				<h3>Elementi çıkarmak için CLICK yap :)</h3>
+			</div>
+             </div>
+			 <div class="icerik-kutu1">
+			<div class="icerik-detay1">
+			<h2>Element Ekleme-Cikartma örneği</h2><br>
+			
+			<h3><pre> function textForNewElmnt(){
+	var metin = document.getElementById("textForNewElement").value;
+	var text = document.createTextNode(metin);
+	var newElement = document.createElement("P");
+	newElement.onclick = function(){deletePFromId(newElement)};
+	newElement.appendChild(text);
+	var contentOpt = document.getElementById("newElementZone");
+	contentOpt.appendChild(newElement);		
+}
+
+function deletePFromId(p){
+	var element = document.getElementById("newElementZone");
+	element.removeChild(p);
+}</pre></h3>
+<br><br>
+			
+			<p>Yukarıdaki ismi yazan örnekteki işlemımızı adım adım anlatarak açıklayalım.</p>
+			
+	<h3><pre>document.getElementById</pre></h3>
+	<p>bu kod ile textboxımıza verdıgımız id ile bağ kurarak içerisindeki metne ulaşırız.</p>
+	
+	<h3>document.createTextNode(metin)</h3>
+	<p>kodu ile yazılmış olan metni bir düğüm oluşturarak içine atarız.</p>
+	
+	
+	<p>String olarak gönderilen metinsel değeri sayayı çevirir. Ondalık ifade aynen döndürülür (String to Number).</p>
+	
+	<h3>document.createElement("P");</h3>
+	<p>p tagı altında dugumuzumze bir element ekleriz</p>
+	
+	<h3>newElement.onclick = function(){deletePFromId(newElement)}</h3>
+	<p>yeni eklenen elementin on click özelligine yenı ekleenen elementımızın idsini atarız</p>
+	
+	<h3>newElement.appendChild(text)</h3>
+	<p>metnimizi olusturdugumuz dügümümüze ekleriz.</p>
+			
+	<h3><pre> function deletePFromId(p){
+	var element = document.getElementById("newElementZone");
+	element.removeChild(p);
+}</pre></h3>
+	<p>on clik özelligiyle üzerine tıklanmış olan yer p olarak idsi gelir ve kaldirma kodumuzla silinmiş olur</p>		
+			
+			</div>
+				</div>
+            
+            
+		</div>
+
+	</div>
+	
+</div>
+</body>
+</html>
