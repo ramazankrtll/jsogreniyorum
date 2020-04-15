@@ -2,17 +2,17 @@
 ![jsogreniyorum - Gif ](Css_Site/outputs/adam_asmaca.gif)
 
 
----------------ADAM ASMACA--------------
+---------------FORM_ÖRNEĞİ--------------
 ![jsogreniyorum - Gif ](Css_Site/outputs/form.gif)
 
 
----------------ADAM ASMACA--------------
+---------------BAKKAL_POŞETİM.COM--------------
 ![jsogreniyorum - Gif ](Css_Site/outputs/bakkal.gif)
 
 
----------------ADAM ASMACA--------------
+---------------DOCUMENT OBJECT MODEL İÇERİĞİ--------------
 ![jsogreniyorum - Gif ](Css_Site/outputs/dom.gif)
 
 
----------------ADAM ASMACA--------------
+---------------ELEMENT OLUSTURMA EKLEME ÖRNEĞİ--------------
 ![jsogreniyorum - Gif ](Css_Site/outputs/soru.gif)
